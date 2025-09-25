@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAN'S PORTFOLIO</title>
+    <link rel="stylesheet" href="woman.css" />
+  </head>
+
+  <body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/0.png" >
+            </a>
+        </div>
+        <!-- Hamburger icon for phone -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <ul class="links">
+            <li id="contact"><a href="contact.html">
+                <img src="img/0.3.png"></a></li>
+            <li id="project"><a href="project.html">
+                <img src="img/0.1.png"></a></li>
+            <li id="about"><a href="about.html">
+                <img src="img/0.2.png"></a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- 3 Column Layout -->
+<div class="three-column-grid">
+  <!-- Column 1: Text Section -->
+  <div class="text-section">
+    <div class="top-text-grid">
+      <div class="text-block">Dignity of woman<br></div>
+      <div class="text-block">2d Illustration<br>procreate</div>
+      <div class="text-block">2023</div>
+    </div>
+    <div class="long-text">
+      Characteristics such as being slim, weak, taking care of children, taking care of housework, and dressing conservatively are common points when it comes to art about women from 1900 to 1945. Besides, feudalism was the source of those harsh prejudices, and fortunately, in 1945, the regime was eliminated in Asia in general and in Indochina in particular to raise awareness of gender equality. As a matter of fact, the image of women is more open and liberal through some artists. Thus, the project’s message is that human rights are women rights
+    </div>
+  </div>
+
+  <div class="image-wrapper">
+    <div class="image-box" id="box1">
+      <img src="img/w1.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="auto-scroll-bar">
+  <div class="scrolling-images">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+  </div>
+  <div class="scrolling-images">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+  </div>
+</div>
+<script>
+function toggleMenu() {
+    const links = document.querySelector('.links');
+    links.classList.toggle('active');
+}
+const draggableItems = document.querySelectorAll('.profolio-hastag > *');
+    </script>
+  </body>
+</html>

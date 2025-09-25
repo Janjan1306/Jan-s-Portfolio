@@ -1,0 +1,410 @@
+html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: ArialNarrow;
+    src: url(font/ARIALN.TTF);
+  }
+/*NAV BAR*/
+.navbar {
+  display: flex;
+  width: 100%;
+  z-index: 1000;
+  margin-top: 1vh;
+  position: fixed;
+  justify-content: space-between;
+  
+}
+.logo {
+  margin-right: auto; /* pushes logo to the right */
+}
+.logo img{
+    width: auto;
+    height: 4rem;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-right: 2vw;
+    margin-top: -10px;
+    
+}
+.links img{
+    width: auto;
+    height: 5rem;
+}
+/* Hide hamburger on desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 2vh;
+}
+
+/*BACKGROUND*/
+body{
+    position: relative;
+    background-image: url(img/bg1.png) ;
+    background-size: 100% 100%;       /* Makes it cover the entire screen */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed;
+}
+/*BODY*/
+.profolio {
+    position: relative;
+     top: 13vh; /* ✅ Center vertically and move down 3vh */
+}
+.folder{
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.folder img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.profolio-hastag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* ✅ Above folder */
+    cursor: grab; /* shows user it can be dragged */
+}
+.profolio-hastag:active {
+    cursor: grabbing;
+}
+.pic11{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 25%; 
+}
+.pic12{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    width: 15%; 
+}
+.pic13{
+    position: absolute;
+    top: 19%;
+    left: 65%;
+    width: 17%; 
+    transform: rotate(6deg);
+}
+.pic14{
+    position: absolute;
+    top: 93%;
+    left: 18%;
+    width: 25%; 
+    transform: rotate(-6deg);
+}
+#pic151{
+    position: absolute;
+    top: 78%;
+    left: 13%;
+    width: 4%; 
+}
+#pic152{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    width: 3%; 
+    transform: rotate(6deg);
+}
+.pic16{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 12%; 
+    transform: rotate(-6deg);
+}
+.folder-section{
+    position: relative;
+}
+.introduction{
+    position: relative;
+    text-align: justify;
+    font-family: ArialNarrow;
+    font-size: 3vw;
+    width:  27vw;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    left: 9%;
+}
+.pic17 img, .pic18 img, .pic19 img{
+    width: 20%;
+    position: absolute;
+    height: auto;
+}
+.pic17 img{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 20%;
+}
+.pic18 img{
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    width: 20%;
+}
+.pic19 img {
+    position: absolute;
+    top: 58%;
+    left: 76%;
+    width: 20%;
+}
+.folder-child img{
+    transition: transform 0.3s ease;
+}
+.folder-child img:hover {
+  transform: scale(1.1);
+}
+
+/* Auto scroll bar */
+.scroll-container {
+  position: absolute;
+  bottom: 0; /* ✅ Anchors to the bottom of the page wrapper */
+  left: 0;
+  width: 100%;
+}
+
+.auto-scroll-bar {
+  position: fixed; /* Stick to the viewport bottom */
+  bottom: 0;       /* Align to bottom */
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #49CEDD;
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  z-index: 1002;
+
+}
+
+.scrolling-images {
+  display: flex;
+  animation: scroll-left 20s linear infinite;
+}
+
+.scrolling-images img {
+  width: 10rem;
+  height: auto;
+  margin-right: 10vw;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+/* Tablet devices */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    /*NAV BAR*/
+    .logo img {
+        height: 3rem;
+    }
+
+    .links img {
+        height: 4rem;
+        margin-right: 1vw;
+    }
+    /*BODY*/
+    .folder img {
+        width: 100%;
+        margin: 0 auto;      
+    }
+    .pic11{
+        top: 7vh;
+        left: 10%;
+    }
+    .pic12{
+        top: 65%;
+        left: 60%;
+        width: 25vw;
+    }
+    .pic13{
+        top: 19%;
+        left: 65%;
+        width: 21vw;
+    }
+    .pic14{
+        top: 95%;
+        left: 10%;
+        width: 30vw;
+    }
+    #pic151{
+        top: 0%;
+        left: 83%;
+        width: 5vw;
+        transform: rotate(-6deg);
+    }
+    #pic152{
+        top: 77%;
+        left: 8%;
+        width: 9vw;
+    }
+    .pic16{
+        top: 50%;
+        left: 4%;
+        width: 15vw;
+    }
+    .introduction{
+        padding-top: 25%;
+    }
+    .pic17 img{
+    top: 55%;
+    }
+    .pic18 img{
+    top: 39%;
+    }
+    .pic19 img{
+    top: 65%;
+    }
+    .scroll-container {
+        position: fixed; /* keep it at the bottom of viewport */
+        bottom: 0;
+    }
+
+    .scrolling-images img {
+        width: 8rem;
+        margin-right: 5vw;
+    }
+}
+
+
+/* Phone devices */
+@media screen and (max-width: 768px){
+    /*NAV BAR*/
+    .logo img {
+        height: 4rem;
+    }
+    .links {
+        display: flex; /* enable flex for vertical layout */
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%; /* hide off-screen */
+        width: 15vh;
+        height: 100%;
+        padding-top: 0vw;
+        padding-left: 0;
+        padding-right: 10vw;    /* remove default padding */
+        margin: 0;
+        transition: right 0.3s ease;
+        z-index: 1001;
+    }
+    .links li {
+        text-align: center;
+    }
+    .links li img {
+        width: 30vw; /* scale menu images on phone */
+        height: auto;
+    }
+    .hamburger {
+        display: flex; /* show hamburger on phone */
+        padding-right: 4vw;
+    }
+    /* Active menu (shown) */
+    .links.active {
+        right: 0;
+    }
+    .links img {
+        height: 3rem;
+        margin-right: 0.5vw;
+    }
+
+    /*BODY*/
+    .folder img {
+        width: 150%;   
+        height: auto;
+    }
+    .pic11{
+        top: -10%;
+        left: -1%;
+        width: 35vw;
+    }
+    .pic12{
+        top: 65%;
+        left: 68%;
+        width: 25vw;
+    }
+    .pic13{
+        top: 12%;
+        left: 65%;
+        width: 21vw;
+    }
+    .pic14{
+        top: 95%;
+        left: 10%;
+        width: 30vw;
+    }
+    #pic151{
+        top: 0%;
+        left: 83%;
+        width: 5vw;
+        transform: rotate(-6deg);
+    }
+    #pic152{
+        top: 77%;
+        left: 4%;
+        width: 9vw;
+    }
+    .pic16{
+        top: 50%;
+        left: 4%;
+        width: 15vw;
+    }
+    .introduction {
+        font-size: 5vw;
+        width: 80vw;
+        padding-top: 45%;
+    }
+    .folder-child{
+        position: relative;
+    }
+    .pic17 img, .pic18 img, .pic19 img{
+        width: 40%;
+    }
+    .pic17 img{
+        top: 1vh;
+        left: 10%;
+    }
+    .pic18 img{
+        top: 15vh;
+        left: 25%;
+    }
+    .pic19 img{
+        top: 56%;
+        left: 58%;
+    }
+ 
+    .scroll-container {
+        position: fixed; /* always at the bottom */
+        bottom: 0;
+    }
+
+    .scrolling-images img {
+        width: 6rem;
+        margin-right: 3vw;
+    }
+}

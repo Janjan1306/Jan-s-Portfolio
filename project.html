@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAN'S PORTFOLIO</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+
+  <body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/0.png" >
+            </a>
+        </div>
+        <!-- Hamburger icon for phone -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+  
+        <ul class="links">
+            <li id="contact"><a href="contact.html">
+                <img src="img/0.3.png"></a></li>
+            <li id="project"><a href="project.html">
+                <img src="img/0.1.png"></a></li>
+            <li id="about"><a href="about.html">
+                <img src="img/0.2.png"></a></li>
+        </ul>
+    </nav>
+    </header>
+    <div class="grid-container">
+        <div class="grid-item" id="grid1">
+            <img src="img/blue-folder.png" >
+            <a href="Yokai.html"><span class="caption">Yokai Mask</span></a>
+        </div>
+        <div class="grid-item" id="grid2">
+            <img src="img/blue-folder.png" >
+            <a href="kohaku.html"><span class="caption">Kohaku</span></a>
+        </div>
+        <div class="grid-item" id="grid3">
+            <img src="img/blue-folder.png" >
+            <a href="home.html"><span class="caption">Flavor of home</span></a>
+        </div>
+        <div class="grid-item" id="grid4">
+            <img src="img/blue-folder.png" >
+            <a href="insanity.html"><span class="caption">Insanity</span></a>
+        </div>
+        <div class="grid-item" id="grid5">
+            <img src="img/blue-folder.png" >
+            <a href="woman.html"><span class="caption">Dignity of woman</span></a>
+        </div>
+        <div class="grid-item" id="grid6">
+            <img src="img/blue-folder.png" >
+            <a href="Body.html"><span class="caption">Until the Body Dies</span></a>
+        </div>
+    </div>
+<div class="auto-scroll-bar">
+  <div class="scrolling-images">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+  </div>
+  <div class="scrolling-images">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+  </div>
+</div>
+<script>
+function toggleMenu() {
+    const links = document.querySelector('.links');
+    links.classList.toggle('active');
+}
+const draggableItems = document.querySelectorAll('.profolio-hastag > *');
+    </script>
+  </body>
+</html>

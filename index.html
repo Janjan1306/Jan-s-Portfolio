@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAN'S PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/0.png" >
+            </a>
+        </div>
+        <!-- Hamburger icon for phone -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+  
+        
+    </nav>
+    </header>
+    <div class="profolio">
+        <div class="folder"> <img src="img/1.png" ></div>
+        <div class="profolio-hastag">
+            <img class="pic11" src="img/pic11.png" >
+            <img class="pic12" src="img/pic12.png" >
+            <img class="pic13" src="img/pic13.png" >
+            <img class="pic14" src="img/pic14.png" >
+            <img class="pic15" id="pic151" src="img/pic15.png" >
+            <img class="pic15" id="pic152" src="img/pic15.png" >
+            <img class="pic16" src="img/pic16.png" >
+        </div>
+    </div>
+    <div class="folder-section">
+        <div class="introduction"><p>Hi there! I’m Tran Pham - a graphic designer / illustrator based in VIETNAM. I love getting inspired by wandering on the internet - where I spend most of my life on. </p></div>
+        <div class="folder-child">
+            <div class="pic17"> <a href="about.html">
+                <img src="img/pic17.png" >
+            </a></div>
+            <div class="pic18"><div class="pic17"> <a href="project.html">
+                <img src="img/pic18.png" >
+            </a></div></div>
+            <div class="pic19"><div class="pic17"> <a href="contact.html">
+                <img src="img/pic19.png" >
+            </a></div></div>
+        </div>
+    </div>
+    <div class="scroll-container">
+  <div class="auto-scroll-bar">
+  <div class="scrolling-images">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+  </div>
+  <div class="scrolling-images">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+  </div>
+</div>
+<script>
+function toggleMenu() {
+    const links = document.querySelector('.links');
+    links.classList.toggle('active');
+}
+const draggableItems = document.querySelectorAll('.profolio-hastag > *');
+
+draggableItems.forEach(item => {
+    let isDragging = false;
+    let offsetX = 0;
+    let offsetY = 0;
+
+    item.style.position = 'absolute'; // Ensure absolute positioning
+
+    item.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        offsetX = e.clientX - item.offsetLeft;
+        offsetY = e.clientY - item.offsetTop;
+        item.style.cursor = 'grabbing';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+            item.style.left = `${e.clientX - offsetX}px`;
+            item.style.top = `${e.clientY - offsetY}px`;
+        }
+    });
+
+    document.addEventListener('mouseup', () => {
+        if (isDragging) {
+            isDragging = false;
+            item.style.cursor = 'grab';
+        }
+    });
+});
+</script>
+  </body>
+</html>

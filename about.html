@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAN'S PORTFOLIO</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+
+  <body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/0.png" >
+            </a>
+        </div>
+        <!-- Hamburger icon for phone -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+  
+        <ul class="links">
+            <li id="contact"><a href="contact.html">
+                <img src="img/0.3.png"></a></li>
+            <li id="project"><a href="project.html">
+                <img src="img/0.1.png"></a></li>
+            <li id="about"><a href="about.html">
+                <img src="img/0.2.png"></a></li>
+        </ul>
+    </nav>
+    </header>
+    <section class="intro-section">
+  <div class="intro-text">
+    <p>
+      Hi there! I’m Tran Pham - a graphic designer / illustrator based in VIETNAM. I’m studying Digital Media at RMIT Vietnam. 
+    </p>
+    <div class="tools">
+      <img src="img/Illustrator.png" alt="Adobe Illustrator">
+      <img src="img/Photoshop.png" alt="Adobe Photoshop">
+      <img  src="img/Figma.png" alt="Figma">
+      <img id="pro" src="img/Acrobat.png" alt="Procreate">
+    </div>
+  </div>
+  <div class="intro-image">
+    <img src="img/CHAR2-ezgif.com-video-to-gif-converter (1).gif" alt="Character">
+  </div>
+</section>
+<div class="auto-scroll-bar">
+  <div class="scrolling-images">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+  </div>
+  <div class="scrolling-images">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+  </div>
+</div>
+<script>
+function toggleMenu() {
+    const links = document.querySelector('.links');
+    links.classList.toggle('active');
+}
+const draggableItems = document.querySelectorAll('.profolio-hastag > *');
+    </script>
+  </body>
+</html>

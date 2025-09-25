@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAN'S PORTFOLIO</title>
+    <link rel="stylesheet" href="kohaku.css" />
+  </head>
+
+  <body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/0.png" >
+            </a>
+        </div>
+        <!-- Hamburger icon for phone -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <ul class="links">
+            <li id="contact"><a href="contact.html">
+                <img src="img/0.3.png"></a></li>
+            <li id="project"><a href="project.html">
+                <img src="img/0.1.png"></a></li>
+            <li id="about"><a href="about.html">
+                <img src="img/0.2.png"></a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- 3 Column Layout -->
+<div class="three-column-grid">
+  <!-- Column 1: Text Section -->
+  <div class="text-section">
+    <div class="top-text-grid">
+      <div class="text-block">Untile the Body Dies<br></div>
+      <div class="text-block">Code-based digital art</div>
+      <div class="text-block">2025</div>
+    </div>
+    <div class="long-text">
+      “Until the Body Dies is an interactive, code-based digital art experience built with JavaScript (P5.js) on a canvas. It immerses users inside the mind of a comatose body, exploring the fragile, suspended space of liminality—where consciousness exists but cannot act. Through dynamic visuals and fragmented memories,  users navigate awareness, struggle, and decay, confronting the tension between life and death, presence and absence, and the inevitability of mortality.
+    </div>
+    <div class="long-text" id="links">
+   <a href="https://janjan1306.github.io/A3_s406324_Until-the-Body-Dies/" target="_blank">
+    Website link
+  </a></div>
+  </div>
+
+  <div class="image-wrapper">
+    <div class="image-box" id="box1">
+      <img src="img/b1.png" alt="">
+    </div>
+    <div class="image-box" id="box2">
+      <img src="img/b2.png" alt="">
+    </div>
+    <div class="image-box" id="box3">
+      <img src="img/b3.png" alt="">
+    </div>
+    <div class="image-box" id="box4">
+      <img src="img/b4.png" alt="">
+    </div> 
+    <div class="image-box" id="box4">
+      <img src="img/b5.png" alt="">
+    </div> 
+    <div class="image-box" id="box4">
+      <img src="img/b6.png" alt="">
+    </div> 
+  </div>
+</div>
+
+<div class="auto-scroll-bar">
+  <div class="scrolling-images">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+  </div>
+  <div class="scrolling-images">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+  </div>
+</div>
+<script>
+function toggleMenu() {
+    const links = document.querySelector('.links');
+    links.classList.toggle('active');
+}
+const draggableItems = document.querySelectorAll('.profolio-hastag > *');
+    </script>
+  </body>
+</html>

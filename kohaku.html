@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRAN'S PORTFOLIO</title>
+    <link rel="stylesheet" href="kohaku.css" />
+  </head>
+
+  <body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/0.png" >
+            </a>
+        </div>
+        <!-- Hamburger icon for phone -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <ul class="links">
+            <li id="contact"><a href="contact.html">
+                <img src="img/0.3.png"></a></li>
+            <li id="project"><a href="project.html">
+                <img src="img/0.1.png"></a></li>
+            <li id="about"><a href="about.html">
+                <img src="img/0.2.png"></a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <!-- 3 Column Layout -->
+<div class="three-column-grid">
+  <!-- Column 1: Text Section -->
+  <div class="text-section">
+    <div class="top-text-grid">
+      <div class="text-block">Kohaku<br></div>
+      <div class="text-block">Interactive Poetry Website</div>
+      <div class="text-block">2025</div>
+    </div>
+    <div class="long-text">
+      “Kohaku” is a web-based interactive poetry based on the song “Kohaku” in the album "DE LEO MOT NGON NUI" by Tung. The project aims to visualize memory, loss, and time - core themes of the song through delicate interaction, abstract design, and symbolic visuals.
+    </div>
+    <div class="long-text" id="links">
+   <a href="https://cn84mz.csb.app" target="_blank">
+    Poem
+  </a></div>
+  </div>
+
+  <div class="image-wrapper">
+    <div class="image-box" id="box1">
+      <img src="img/k1.png" alt="">
+    </div>
+    <div class="image-box" id="box2">
+      <img src="img/k2.png" alt="">
+    </div>
+    <div class="image-box" id="box3">
+      <img src="img/k3.png" alt="">
+    </div>
+    <div class="image-box" id="box4">
+      <img src="img/k4.png" alt="">
+    </div> 
+  </div>
+</div>
+
+<div class="auto-scroll-bar">
+  <div class="scrolling-images">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+  </div>
+  <div class="scrolling-images">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+    <img src="img/pic26.png" alt="Image 26">
+  </div>
+</div>
+<script>
+function toggleMenu() {
+    const links = document.querySelector('.links');
+    links.classList.toggle('active');
+}
+const draggableItems = document.querySelectorAll('.profolio-hastag > *');
+    </script>
+  </body>
+</html>
