@@ -99,10 +99,10 @@ body{
     background-attachment: fixed;
 }
 /*BODY*/
-/* Three Column Grid Layout */
-.three-column-grid {
+/* One Column Grid Layout */
+.one-column-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: 7rem 2rem 3rem;
 }
 
@@ -266,7 +266,7 @@ body{
         margin-right: 0.5vw;
     }
 
-    .three-column-grid {
+    .one-column-grid {
     grid-template-columns: 1fr; 
     padding: 7rem 2rem 3rem;
   }
