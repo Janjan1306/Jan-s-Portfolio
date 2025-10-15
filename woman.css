@@ -166,7 +166,6 @@ body{
   .image-wrapper {
     grid-column: 2 / 4;  /* covers columns 2 and 3 */
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2-column layout inside */
     gap: 2rem;
     justify-items: center;
   }
@@ -194,7 +193,6 @@ body{
   /* Make images form their own 2-column grid */
   .image-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     justify-items: center; 
     margin-top: 2rem;
